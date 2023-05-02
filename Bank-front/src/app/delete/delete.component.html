@@ -1,0 +1,40 @@
+<div class="container">
+  <h2 class="delete">Delete Account</h2>
+  <form>
+  <div>
+  
+  
+  
+          <!-- <mat-form-field class="acc" appearance="outline">
+              <mat-label >Account Number</mat-label>
+              <input formControlName="accountNumber" matInput type="number" placeholder="Account Number">
+            </mat-form-field>
+            <br> -->
+  
+            <mat-form-field class ="accno" appearance="fill">
+              <mat-label>Account Number</mat-label>
+              <input id="acctID" 
+              [(ngModel)] = "delacc" name = "acctID"  matInput>
+            </mat-form-field>
+            <br>
+  
+            
+      
+           
+  
+            <button mat-raised-button class="acc" color="warn" (click)="ondelete()">Delete</button>
+            <button mat-raised-button class="acc" [routerLink]="['/home']" routerLinkActive="Active" color="warn">Home</button>
+      
+            
+      
+  
+     
+      
+        
+  
+  </div>
+  </form>
+  
+ 
+  </div>
+  

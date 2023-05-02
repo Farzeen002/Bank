@@ -1,0 +1,89 @@
+<div class="container">
+    
+    <!-- acctID!:number;
+	 custName!:string;
+	 city!:string;
+	 state!:string;
+	 country!:string;
+	 phoneNo!:number;
+	 password!:string; -->
+
+<h2 class="header"> Add Account </h2>
+
+<form>
+
+   
+
+  <mat-form-field class ="accno" appearance="fill">
+    <mat-label>Account Number</mat-label>
+    <input id="accNum"
+    [(ngModel)] = "customer.accNum" name = "accNum" matInput>
+  </mat-form-field>
+  <br>
+
+
+  <mat-form-field class ="accno"appearance="fill">
+    <mat-label>Customer Name</mat-label>
+    <input  id="custName" 
+    [(ngModel)] = "customer.custName" name = "custName" matInput> 
+  </mat-form-field>
+  <br>
+
+  <!-- <mat-form-field class ="accno" appearance="fill">
+    <mat-label>Balance</mat-label>
+    <input id="balance"
+    [(ngModel)] = "customer.balance" name = "balance" matInput>
+  </mat-form-field>
+  <br> -->
+
+  <mat-form-field class ="accno"appearance="fill">
+    <mat-label> City </mat-label>
+    <input id="city" [(ngModel)] = "customer.city" name = "city" matInput> 
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class ="accno"appearance="fill">
+    <mat-label> State </mat-label>
+    <input id="state" [(ngModel)] = "customer.state" name = "state" matInput> 
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class ="accno"appearance="fill">
+    <mat-label> Country </mat-label>
+    <input id="country" [(ngModel)] = "customer.country" name = "country" matInput> 
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class ="accno"appearance="fill">
+    <mat-label> Phone No </mat-label>
+    <input id="phoneNo" [(ngModel)] = "customer.phoneNo" name = "phoneNo" matInput> 
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class ="accno"appearance="fill">
+    <mat-label> Password </mat-label>
+    <input id="password" [(ngModel)] = "customer.password" name = "password" matInput> 
+  </mat-form-field>
+  <br>
+
+  <div mat-dialog-actions [align]="'end'">
+
+    <button class = "btn btn-success" (click)="onAdd()" type ="submit" mat-flat-button color="primary" >Add</button>
+
+    <button class ="cancel" [routerLink]="['/create']" routerLinkActive="Active" mat-flat-button color="warn" mat-close>Cancel</button>
+
+</div>
+</form>
+
+
+
+
+  <!-- <mat-form-field appearance="fill">
+    <mat-label>Initial Balance</mat-label>
+    <mat-select>
+        <mat-option value="500">500</mat-option>
+      <mat-option value="1000">1000</mat-option>
+      <mat-option value="5000">5000</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div> -->

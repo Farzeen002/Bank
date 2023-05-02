@@ -1,0 +1,38 @@
+
+<div>
+
+
+  <form>
+    <div>
+      
+          <mat-toolbar>
+            <span>Withdraw Money</span>
+          </mat-toolbar>
+          <br>
+        
+
+      <mat-form-field class="acc" appearance="outline">
+          <mat-label >Account Number</mat-label>
+          <input id="accountNumber" matInput type="number" name="acctID" placeholder="Account Number" [(ngModel)]="data1.acctID">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="acc" appearance="outline">
+          <mat-label >Money</mat-label>
+          <input id="money" matInput type="number" name="balance"  [(ngModel)]="data1.balance" placeholder="Money">
+        </mat-form-field>
+        <br>
+  
+       
+
+        <button mat-raised-button class="acc" color="warn" (click)="onWithdraw()">Withdraw</button>
+        <button mat-raised-button class="acc" [routerLink]="['/home']" routerLinkActive="Active" color="warn">Home</button>
+  
+        
+      </div>
+
+  </form>
+  
+    
+
+</div>

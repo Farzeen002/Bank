@@ -1,0 +1,55 @@
+<div class="container">
+<h2 class="view">View Balance</h2>
+<form>
+<div>
+
+
+
+        <!-- <mat-form-field class="acc" appearance="outline">
+            <mat-label >Account Number</mat-label>
+            <input formControlName="accountNumber" matInput type="number" placeholder="Account Number">
+          </mat-form-field>
+          <br> -->
+
+          <mat-form-field class ="accno" appearance="fill">
+            <mat-label>Account Number</mat-label>
+            <input id="acctID" 
+            [(ngModel)] = "accnew" name = "acctID" matInput>
+          </mat-form-field>
+          <br>
+
+          
+    
+         
+
+          <button mat-raised-button class="acc" color="warn" (click)="onview()">View</button>
+          <button mat-raised-button class="acc" [routerLink]="['/home']" routerLinkActive="Active" color="warn">Home</button>
+    
+          
+    
+
+   
+    
+      
+
+</div>
+</form>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Account Number</th>
+      <th>Balance</th>
+      <th>Account Status</th>
+    </tr>
+  </thead>
+  <tbody *ngIf="accactive">
+    <tr >
+      <td>{{acctID}}</td>
+      <td>{{balance}}</td>
+      <td>{{acctStatus}}</td>
+
+    </tr>
+  </tbody>
+</table>
+</div>

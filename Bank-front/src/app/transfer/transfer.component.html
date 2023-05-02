@@ -1,0 +1,43 @@
+
+<div>
+
+
+    <form>
+      <div>
+        
+            <mat-toolbar>
+              <span>Transfer Money</span>
+            </mat-toolbar>
+          
+
+        <mat-form-field class="acc" appearance="outline">
+            <mat-label >Source Account Number</mat-label>
+            <input  matInput type="number"  id = "acctID" name="sourceacctID"  placeholder="Source Account Number"  [(ngModel)]="data1.acctID">
+          </mat-form-field>
+          <br>
+
+          <mat-form-field class="acc" appearance="outline">
+            <mat-label >Destination Account Number</mat-label>
+            <input  matInput type="number" id = "destinationacctID"  name="destinationacctID"  placeholder="Destination Account Number" [(ngModel)]="data1.destinationacctID">
+          </mat-form-field>
+          <br>
+
+          <mat-form-field class="acc" appearance="outline">
+            <mat-label >Money</mat-label>
+            <input name="balance"  id = "balance" matInput type="number" placeholder="Money"  [(ngModel)]="data1.balance">
+          </mat-form-field>
+          <br>
+    
+         
+
+          <button mat-raised-button class="acc" color="warn"  (click)="onTransfer()">Transfer</button>
+          <button mat-raised-button class="acc" [routerLink]="['/home']" routerLinkActive="Active" color="warn">Home</button>
+    
+          
+    
+        </div>
+    </form>
+    
+      
+
+</div>
